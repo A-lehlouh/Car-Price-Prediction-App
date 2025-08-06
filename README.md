@@ -31,3 +31,5 @@
 - matplotlib.pyplot
 -sklearn.ensemble
 
+https://github.com/A-lehlouh/Car-Price-Prediction-App/blob/main/price.py
+https://github.com/A-lehlouh/Car-Price-Prediction-App/blob/main/car_price_prediction%20(Autosaved).csv
