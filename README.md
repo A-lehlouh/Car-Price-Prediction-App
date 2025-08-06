@@ -21,16 +21,13 @@
 - Pandas
 - Scikit-learn
 - Matplotlib
+-[price.py](https://github.com/A-lehlouh/Car-Price-Prediction-App/blob/main/price.py)
+-[datasets](https://github.com/A-lehlouh/Car-Price-Prediction-App/blob/main/car_price_prediction%20(Autosaved).csv)
 
 ---
 
-## Library used in the code
-- pandas
-- streamlit
-- seaborn
-- matplotlib.pyplot
-- sklearn.ensemble
+##Contact
+If you have any questions, feel free to reach out via GitHub Issues or email: [AbdulrahmanLehlouh@gmail.com]
 
-[price.py](https://github.com/A-lehlouh/Car-Price-Prediction-App/blob/main/price.py)
-
-[datasets](https://github.com/A-lehlouh/Car-Price-Prediction-App/blob/main/car_price_prediction%20(Autosaved).csv)
+## License
+This project is open-source and available under the MIT License.
