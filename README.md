@@ -21,6 +21,7 @@
 - Pandas
 - Scikit-learn
 - Matplotlib
+- Pickels file
 
 ## Code & Datasets
 - [price.py](https://github.com/A-lehlouh/Car-Price-Prediction-App/blob/main/price.py)
