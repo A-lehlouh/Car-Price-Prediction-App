@@ -26,7 +26,7 @@
 
 ---
 
-##Contact
+## Contact
 If you have any questions, feel free to reach out via GitHub Issues or email: [AbdulrahmanLehlouh@gmail.com]
 
 ## License
