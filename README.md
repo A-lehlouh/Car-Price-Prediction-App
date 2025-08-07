@@ -86,6 +86,7 @@ Mileage
  Real-time price prediction based on your inputs
 
 - Visual Insights
+  
 Most popular car brands in dataset
 
 Price trends over time
