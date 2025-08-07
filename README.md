@@ -81,7 +81,7 @@ Fuel Type
 Mileage
 
 - Output
-Real-time price prediction based on your inputs
+ Real-time price prediction based on your inputs
 
 - Visual Insights
 Most popular car brands in dataset
