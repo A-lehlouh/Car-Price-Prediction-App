@@ -64,12 +64,40 @@ Helps avoid retraining the model every time the app runs.
 ## Code & Datasets
 - [train model.py](https://github.com/A-lehlouh/Car-Price-Prediction-App/blob/main/price.py)
 - [datasets](https://github.com/A-lehlouh/Car-Price-Prediction-App/blob/main/car_price_prediction%20(Autosaved).csv)
--[app.py]()
+- [app.py](https://github.com/A-lehlouh/Car-Price-Prediction-App/blob/main/app.py)
+
+## App UI Overview
+- Inputs
+Manufacturer
+
+Production Year
+
+Engine Volume
+
+Cylinders
+
+Fuel Type
+
+Mileage
+
+- Output
+Real-time price prediction based on your inputs
+
+- Visual Insights
+Most popular car brands in dataset
+
+Price trends over time
+
+How mileage affects pricing
+
 
 ---
 
 ## Contact
-If you have any questions, feel free to reach out via GitHub Issues or email: [AbdulrahmanLehlouh@gmail.com]
+For any questions, ideas, or issues, feel free to:
 
+-  Open an issue on GitHub
+
+-- Email me directly at: AbdulrahmanLehlouh@gmail.com
 ## License
 This project is open-source and available under the MIT License.
