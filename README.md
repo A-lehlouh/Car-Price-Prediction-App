@@ -24,11 +24,13 @@ This project is a machine learning-powered web application built with Streamlit 
 
 ## Technologies Used
 - Python
+
 The core programming language used to build the app.
 
 Handles everything: data processing, ML training, UI logic, and visualization.
 
 - Pandas
+
 Used for data loading, cleaning, filtering, and transformation.
 
 Converts string values to usable numerical formats (Engine volume, Mileage).
@@ -36,11 +38,13 @@ Converts string values to usable numerical formats (Engine volume, Mileage).
 Drops irrelevant features like ID, Levy, and Model.
 
 - Scikit-learn
+
 Provides the RandomForestRegressor used to train the prediction model.
 
 Handles regression logic and is robust to overfitting due to ensemble learning.
 
 - Streamlit
+
 Used to build the web app's user interface.
 
 Provides components like selectbox, number_input, and layout utilities for interactivity.
@@ -48,6 +52,7 @@ Provides components like selectbox, number_input, and layout utilities for inter
 Displays prediction results and visual charts.
 
 - Matplotlib & Seaborn
+
 Used together to plot clean, customizable charts:
 
 Bar charts for top manufacturers
@@ -57,6 +62,7 @@ Line charts for average price per year
 Scatter plots for price vs. mileage
 
 - Pickle
+
 Saves the trained model (rf_model.pkl) and the model’s feature columns (model_columns.pkl) for reuse.
 
 Helps avoid retraining the model every time the app runs.
@@ -101,6 +107,6 @@ For any questions, ideas, or issues, feel free to:
 
 -  Open an issue on GitHub
 
--- Email me directly at: AbdulrahmanLehlouh@gmail.com
+- Email me directly at: AbdulrahmanLehlouh@gmail.com
 ## License
 This project is open-source and available under the MIT License.
