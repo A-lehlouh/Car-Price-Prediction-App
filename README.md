@@ -12,11 +12,11 @@ This project is a machine learning-powered web application built with Streamlit 
 
 - Three key interactive charts:
 
--  Top Manufacturers by listing count (Bar chart)
+  Top Manufacturers by listing count (Bar chart)
 
--  Average Car Price by Production Year (Line chart)
+  Average Car Price by Production Year (Line chart)
 
--  Mileage vs. Price relationship (Scatter plot)
+  Mileage vs. Price relationship (Scatter plot)
 
 - Saves trained model to disk using Pickle for fast reloading
 
@@ -60,9 +60,11 @@ Scatter plots for price vs. mileage
 Saves the trained model (rf_model.pkl) and the model’s feature columns (model_columns.pkl) for reuse.
 
 Helps avoid retraining the model every time the app runs.
+
 ## Code & Datasets
-- [price.py](https://github.com/A-lehlouh/Car-Price-Prediction-App/blob/main/price.py)
+- [train model.py](https://github.com/A-lehlouh/Car-Price-Prediction-App/blob/main/price.py)
 - [datasets](https://github.com/A-lehlouh/Car-Price-Prediction-App/blob/main/car_price_prediction%20(Autosaved).csv)
+-[app.py]()
 
 ---
 
