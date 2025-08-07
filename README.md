@@ -1,44 +1,65 @@
 # Car-Price-Prediction-App
- This is a Streamlit-based machine learning web app that predicts the market price of a used car based on key input features like manufacturer, engine volume, fuel type, mileage, and production year. The project also includes visual analytics to explore market trends and gain insights into car pricing patterns.
+This project is a machine learning-powered web application built with Streamlit and Random Forest Regressor. It predicts the price of a car based on specifications like manufacturer, production year, engine volume, mileage, fuel type, and number of cylinders. It also features interactive data visualizations to explore pricing trends and car market insights.
 
 ##  Features
+- Predict used car prices using machine learning
 
--  Predict used car prices using machine learning
--  User-friendly interface built with **Streamlit**
--  Categorical data is handled automatically using one-hot encoding
--  Real-time data visualizations using **Matplotlib**  
--  Three key visualizations included:
-  - **Bar chart** of car counts by manufacturer
-  - **Line chart** of average price by production year
-  - **Scatter plot** showing price vs. mileage
+- User-friendly interface with Streamlit
+
+- Automatic handling of categorical data via One-Hot Encoding
+
+- Real-time visual analytics powered by Matplotlib and Seaborn
+
+- Three key interactive charts:
+
+-  Top Manufacturers by listing count (Bar chart)
+
+-  Average Car Price by Production Year (Line chart)
+
+-  Mileage vs. Price relationship (Scatter plot)
+
+- Saves trained model to disk using Pickle for fast reloading
 
 ---
 
-##  Technologies Used
-
+## Technologies Used
 - Python
-- The main programming language used to write your code.
-- It handles everything: building the app, processing the data, training the model, etc.
-- Streamlit
-- A UI (User Interface) library.
-- It allows you to turn any Python script into an interactive web app, without needing HTML or JavaScript.
-- In your code: you use it to build interactive elements like dropdowns, number inputs, and display results/visualizations.
-- Pandas
-- A data analysis and cleaning library.
-- It helps you read CSV files, clean and filter columns/rows, and manipulate data easily.
-- In your code: it reads the dataset, drops unnecessary columns, and converts strings to numbers.
-- Scikit-learn
-- A machine learning library.
-- You use it to train a model that can predict car prices based on the inputs.
-- RandomForestRegressor is a powerful model that uses multiple decision trees (a forest) to make accurate predictions.
-- Matplotlib
-- A library used for plotting charts.
-- It’s used alongside Seaborn in your code to visualize insights like price vs. year, top manufacturers, etc.
-- Pickels file
-- A file format used to save a trained model so you don't have to re-train it every time you run the app.
-- It makes your app faster and more efficient.
-- In your code: you save the model once it's trained, and load it later when needed.
+The core programming language used to build the app.
 
+Handles everything: data processing, ML training, UI logic, and visualization.
+
+- Pandas
+Used for data loading, cleaning, filtering, and transformation.
+
+Converts string values to usable numerical formats (Engine volume, Mileage).
+
+Drops irrelevant features like ID, Levy, and Model.
+
+- Scikit-learn
+Provides the RandomForestRegressor used to train the prediction model.
+
+Handles regression logic and is robust to overfitting due to ensemble learning.
+
+- Streamlit
+Used to build the web app's user interface.
+
+Provides components like selectbox, number_input, and layout utilities for interactivity.
+
+Displays prediction results and visual charts.
+
+- Matplotlib & Seaborn
+Used together to plot clean, customizable charts:
+
+Bar charts for top manufacturers
+
+Line charts for average price per year
+
+Scatter plots for price vs. mileage
+
+- Pickle
+Saves the trained model (rf_model.pkl) and the model’s feature columns (model_columns.pkl) for reuse.
+
+Helps avoid retraining the model every time the app runs.
 ## Code & Datasets
 - [price.py](https://github.com/A-lehlouh/Car-Price-Prediction-App/blob/main/price.py)
 - [datasets](https://github.com/A-lehlouh/Car-Price-Prediction-App/blob/main/car_price_prediction%20(Autosaved).csv)
