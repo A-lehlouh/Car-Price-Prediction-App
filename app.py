@@ -28,7 +28,6 @@ st.set_page_config(layout="wide")
 st.title("🚗 Car Price Prediction App")
 
 # User input
-
 st.markdown("Enter your car's information below:")
 
 col1, col2, col3 = st.columns(3)
@@ -75,33 +74,26 @@ def get_avg_price_by_year(data):
 def get_mileage_vs_price_sample(data):
     return data.sample(300, random_state=42)
 
-# Visualizations
-st.markdown("## 📊 Car Market Visual Analysis")
-
-col_a, col_b, col_c = st.columns(3)
-
-with col_a:
-    st.markdown("**Top Manufacturers**")
+# Generate graphs only once using session_state
+if "fig1" not in st.session_state:
     top_manu = get_top_manufacturers(df)
     fig1, ax1 = plt.subplots(figsize=(5, 4))
     sns.barplot(x=top_manu.values, y=top_manu.index, ax=ax1)
     ax1.set_xlabel("Count")
     ax1.set_ylabel("Manufacturer")
     fig1.tight_layout()
-    st.pyplot(fig1)
+    st.session_state.fig1 = fig1
 
-with col_b:
-    st.markdown("**Average Price by Year**")
+if "fig2" not in st.session_state:
     avg_price_by_year = get_avg_price_by_year(df)
     fig2, ax2 = plt.subplots(figsize=(5, 4))
     sns.lineplot(data=avg_price_by_year, x='Prod. year', y='Price', ax=ax2, marker='o')
     ax2.set_xlabel("Production Year")
     ax2.set_ylabel("Average Price (USD)")
     fig2.tight_layout()
-    st.pyplot(fig2)
+    st.session_state.fig2 = fig2
 
-with col_c:
-    st.markdown("**Mileage vs Price**")
+if "fig3" not in st.session_state:
     sample_df = get_mileage_vs_price_sample(df)
     fig3, ax3 = plt.subplots(figsize=(5, 4))
     sns.scatterplot(data=sample_df, x='Mileage', y='Price', alpha=0.5, ax=ax3)
@@ -109,4 +101,20 @@ with col_c:
     ax3.set_ylabel("Price (USD)")
     ax3.set_xlim(0, 300000)  
     fig3.tight_layout()
-    st.pyplot(fig3)
+    st.session_state.fig3 = fig3
+
+# Display graphs
+st.markdown("## 📊 Car Market Visual Analysis")
+col_a, col_b, col_c = st.columns(3)
+
+with col_a:
+    st.markdown("**Top Manufacturers**")
+    st.pyplot(st.session_state.fig1)
+
+with col_b:
+    st.markdown("**Average Price by Year**")
+    st.pyplot(st.session_state.fig2)
+
+with col_c:
+    st.markdown("**Mileage vs Price**")
+    st.pyplot(st.session_state.fig3)
