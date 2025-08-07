@@ -68,6 +68,7 @@ Helps avoid retraining the model every time the app runs.
 
 ## App UI Overview
 - Inputs
+  
 Manufacturer
 
 Production Year
@@ -81,6 +82,7 @@ Fuel Type
 Mileage
 
 - Output
+  
  Real-time price prediction based on your inputs
 
 - Visual Insights
